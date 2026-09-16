@@ -1,12 +1,12 @@
 # EcoOptimize — App mobile
 
-Dashboard Flutter consommant l'API REST du [backend EcoOptimize](../ecooptimize)
+Dashboard Flutter consommant l'API REST du [backend EcoOptimize](https://github.com/Aqui05/ecooptimize)
 pour visualiser en temps réel la production, la consommation et les alertes
 d'un réseau de capteurs énergétiques.
 
 ## Démo
 
-`[Démo](docs/screenshots/demo.gif)`
+![Démo](docs/screenshots/demo.gif)
 
 ## Architecture
 
