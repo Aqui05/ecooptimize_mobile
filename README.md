@@ -6,10 +6,7 @@ d'un réseau de capteurs énergétiques.
 
 ## Démo
 
-> À compléter : glisser ici une capture d'écran ou un GIF de l'app
-> (voir la section [Enregistrer une démo](#enregistrer-une-démo) plus bas).
->
-> `![Démo](docs/screenshots/demo.gif)`
+`[Démo](docs/screenshots/demo.gif)`
 
 ## Architecture
 
@@ -81,23 +78,3 @@ return DashboardRepositoryMock();
 
 `DashboardRepositoryMock` renvoie des données factices avec un léger délai
 simulé — pratique pour avancer sur l'UI indépendamment du backend.
-
-## Enregistrer une démo
-
-Une fois l'app lancée (émulateur ou appareil) :
-
-1. **Android** : `Ctrl+Shift+P` (VS Code) → *Flutter: Screen Record*, ou
-   `adb shell screenrecord /sdcard/demo.mp4` puis `adb pull`.
-2. **iOS simulator** : `xcrun simctl io booted recordVideo docs/screenshots/demo.mov`.
-3. Convertir en GIF léger pour le README (ex. avec `ffmpeg`) :
-   ```bash
-   ffmpeg -i demo.mov -vf "fps=12,scale=360:-1" docs/screenshots/demo.gif
-   ```
-4. Placer le fichier dans `docs/screenshots/` et décommenter la ligne dans
-   la section [Démo](#démo) ci-dessus.
-
-## Prochaines étapes
-
-- Thème sombre
-- Tests widgets sur `DashboardScreen` (avec `DashboardRepositoryMock`)
-- Notifications push locales sur alerte de surcharge
