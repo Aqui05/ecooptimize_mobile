@@ -31,13 +31,6 @@ lib/
   main.dart       → injection de dépendances
 ```
 
-**Principe directeur** : les widgets ne parlent qu'aux providers, les
-providers ne parlent qu'aux repositories (interfaces), et seule
-`DashboardRepositoryImpl` connaît l'existence du réseau. Ça permet de
-brancher `DashboardRepositoryMock` à la place de l'implémentation réelle
-(un seul endroit à changer, dans `main.dart`) pour développer l'UI sans
-backend lancé.
-
 ## Écrans
 
 - **DashboardScreen** — vue d'ensemble : production/consommation totales,
